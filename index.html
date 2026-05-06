@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>BRASA RUSH</header>
+    *
+    <nav>
+        <button onclick="showPage('burgers')">Burgers</button>
+        <button onclick="showPage('acomp')">Acompanhamentos</button>
+        <button onclick="showPage('bebidas')">Bebidas</button>
+    </nav>
+
+    <div class="container">
+
+        <div id="burgers" class="section active">
+            <h2>🍔 Burgers</h2>
+            <div class="card">
+                <img src="Crispy Chicken.img.webp" alt="Crispy"> Crispy Chicken() <span class="price">R$22,90</span><br><button class="add" onclick="addItem(22.9)">Adicionar</button> <button class="add" onclick="removeItem(22.9)">Retirar</button></div>
+            <div class="card">
+                <img src="Smash Brasa Duplo.img.jpg" alt="Smash Duplo"> Smash Brasa Duplo <span class="price">R$24,90</span><br><button class="add" onclick="addItem(24.9)">Adicionar</button> <button class="add" onclick="removeItem(24.9)">Retirar</button></div>
+            <div class="card"><img src="Brasa Triplo.img.jpg"> Brasa Triplo <span class="price">R$28,90</span><br><button class="add" onclick="addItem(28.9)">Adicionar</button> <button class="add" onclick="removeItem(28.9)">Retirar</button></div>
+
+            <div class="card"><img src="Smash + Guaravita.img.jfif">Smash + Guaravita <span class="price">R$23,90</span><br><button class="add" onclick="addItem(23.9)">Adicionar</button> <button class="add" onclick="removeItem(23.9)">Retirar</button></div>
+
+            <div class="card"><img src="Rush Creese.img.webp">Rush Cheese <span class="price">R$27,90</span><br><button class="add" onclick="addItem(27.9)">Adicionar</button> <button class="add" onclick="removeItem(27.9)">Retirar</button></div>
+            <div class="card">
+                <img src="Hamburguer bacon cheddar.img.webp"> Brasa Bacon Cheddar <span class="price">R$28,90</span><br><button class="add" onclick="addItem(28.9)">Adicionar</button> <button class="add" onclick="removeItem(28.9)">Retirar</button></div>
+        </div>
+
+        <div id="acomp" class="section">
+            <h2>🍟 Acompanhamentos</h2>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=100&h=100&fit=crop"> Batata (P) <span class="price">R$9,90</span><br>
+                <button class="add" onclick="addItem(9.9)">Adicionar</button> <button class="add" onclick="removeItem(9.9)">Retirar</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1576107232684-1279f390859f?w=100&h=100&fit=crop"> Batata (M) <span class="price">R$13,90</span><br>
+                <button class="add" onclick="addItem(13.9)">Adicionar</button> <button class="add" onclick="removeItem(13.9)">Retirar</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1518013431117-eb1465fa5752?w=100&h=100&fit=crop"> Batata (G) <span class="price">R$18,90</span><br>
+                <button class="add" onclick="addItem(18.9)">Adicionar</button> <button class="add" onclick="removeItem(18.9)">Retirar</button>
+            </div>
+
+            <div class="card">
+                <img src="batata + Guaraná.img.jpg"> Batata + Guaraná <span class="price">R$14,90</span><br>
+                <button class="add" onclick="addItem(14.9)">Adicionar</button> <button class="add" onclick="removeItem(14.9)">Retirar</button>
+            </div>
+
+            <div class="card">
+                <img src="Aneis de Cebola.img.webp"> Onion Rings 6 <span class="price">R$14,90</span><br><button class="add" onclick="addItem(14.9)">Adicionar</button> <button class="add" onclick="removeItem(14.9)">Retirar</button></div>
+            <div class="card">
+                <img src="anaeis de cebola grande.img.webp"> Onion Rings 12 <span class="price">R$26,90</span><br><button class="add" onclick="addItem(26.9)">Adicionar</button> <button class="add" onclick="removeItem(26.9)">Retirar</button></div>
+        </div>
+
+        <div id="bebidas" class="section">
+            <h2>🥤 Bebidas</h2>
+
+            <div class="card">
+                <img src="Vitamina-de-morango.img.jpg"> Vitamina Morango <span class="price">R$12,90</span><br><button class="add" onclick="addItem(12.9)">Adicionar</button> <button class="add" onclick="removeItem(12.9)">Retirar</button></div>
+
+            <div class="card">
+                <img src="Vitamina De Maracujá.img.jpeg"> Vitamina Maracujá <span class="price">R$14,90</span><br><button class="add" onclick="addItem(14.9)">Adicionar</button> <button class="add" onclick="removeItem(14.9)">Retirar</button></div>
+
+            <div class="card">
+                <img src="coca-cola lata.img.jpeg"> Coca Lata <span class="price">R$6,00</span><br><button class="add" onclick="addItem(6)">Adicionar</button> <button class="add" onclick="removeItem(6)">Retirar</button></div>
+            <div class="card">
+                <img src="Guaraná Lata.img.jpeg"> Guaraná Lata <span class="price">R$6,00</span><br><button class="add" onclick="addItem(6)">Adicionar</button> <button class="add" onclick="removeItem(6)">Retirar</button></div>
+            <div class="card">
+                <img src="Guaravita.img.jpeg"> Guaravita <span class="price">R$3,00</span><br><button class="add" onclick="addItem(3)">Adicionar</button> <button class="add" onclick="removeItem(3)">Retirar</button></div>
+            <div class="card">
+                <img src="agua.img.webp"> Água <span class="price">R$3,00</span><br><button class="add" onclick="addItem(3)">Adicionar</button> <button class="add" onclick="removeItem(3)">Retirar</button></div>
+        </div>
+
+    </div>
+
+    <div class="cart">
+        Total: R$ <span id="total">0</span>
+        <br>
+        <select id="pagamento">
+            <option>Forma de pagamento</option>
+            <option>Pix</option>
+            <option>Cartão</option>
+            <option>Dinheiro</option>
+        </select>
+        <button onclick="finalizar()">Finalizar Pedido</button>
+        <button onclick="cancelar()">Cancelar</button>
+    </div>
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
